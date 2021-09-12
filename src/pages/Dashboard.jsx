@@ -1,5 +1,9 @@
+import { useParams } from "react-router";
+
 export default function Dashboard(props) {
-  const { id } = props.match.params;
+  const params = useParams();
+  // const { id } = props.match.params;
+  const { id } = params;
   return (
     <div>
       <h2>DASH BOARD</h2>
